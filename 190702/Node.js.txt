@@ -1,0 +1,3 @@
+javascript기반
+싱글 스레드
+ Non-blocking Event-loop 방식
