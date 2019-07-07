@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #list,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+        <p>어서오세요 <%= userid%>님 이용자 조회 페이지입니다.</p>
+    <table id="list">
+        <tr>
+            <th>no</th>
+            <th>id</th>
+            <th>name</th>
+            <th>e_mail</th>
+            <th>numOfAccident</th>
+            <th>NumOfOwnerChange</th>
+        </tr>
+        <% for( let i=0; i<userlist.length; i++) { %>
+                <tr>
+                    <td><%= userlist[i].no %></td>
+                    <td><%= userlist[i].id %></td>
+                    <td><%= userlist[i].name %></td>
+                    <td><%= userlist[i].e_mail %></td>
+                    <td><%= userlist[i].numOfAccident %></td>
+                    <td><%= userlist[i].numOfOwnerChange %></td>
+                </tr>
+        
+                <% } %>
+    </table>
+</body>
+
+</html>
