@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>EJS Test</h1>
+    <%= name%> 님 반갑습니다
+    당신의 id는 <%= userid %> 입니다
+
+    <ul>
+        <%
+        var a = 10;
+        for (var i=10, i<10l i++){
+            console.log(i)
+        }
+
+
+        <% for (let i=0; i<loop; i++) {%>
+        <li>LOOP <%= i%> </li>
+        <%}%>
+
+
+        <%
+         var list = carlist[0];
+         %>
+        <h1><%= nmae%></h1>
+
+        <% if (userid == 'aaaaa') { %>
+        <h2><%= name$> 님이 입장하셨습니다.</h2>
+        <% } else { %>
+        <h2>누구세요?</h2>
+        <% } %>
+        <% for (let i=0; i<carlist.length; i++) {%>
+        <p><%= carlist[i].owner %></p>
+        <p><%= carlist[i].carNumber %></p>
+        <p><%= carlist[i].model %></p>
+        <% } %>
+         <table>
+
+         </table>
+    </ul>
+
+</body>
+
+</html>

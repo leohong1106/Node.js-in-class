@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>welcome to car list page^_^</title>
+    <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
+    <script>
+        // $.ajax({
+        //     type: 'GET',
+        //     url: '/api/carlist',
+        //     success: function (data) {
+        //         console.log('success');
+        //         console.log(data);
+        //         $.each(data, function (i, item) {
+        //             $('#list').append(`
+        //             <tr><td>${data[i].carNumber}</td>
+        //                 <td>${data[i].company}</td>
+        //                 <td>${data[i].model}</td>
+        //                 <td>${data[i].numOfAccident}</td>
+        //                 <td>${data[i].numOfOwnerChange}</td>
+        //                 <td>${data[i].owner}</td>
+        //                 </tr>
+                       
+        //             `)
+        //         })
+
+        //     },
+        //     error: function (err) {
+        //         console.log('err');
+        //     }
+        // });
+
+        $(() => {
+            $('#submit').click(function () {
+
+                console.log('확인1');
+                let newData = { "carNumber": "car01", "owner": "owner01" };
+                console.log('확인2');
+                console.log(newData);
+                $.ajax({
+                    type: 'POST',
+                    url: '/api/regcar',
+                    dataType: 'json',
+                    data: newData,
+                    success: function (data) {
+                        console.log('success');
+                        console.log(data);
+                    },
+                    error: function (err) {
+                        console.log('err');
+                    }
+
+                });
+
+            })
+
+        });
+
+    </script>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <p>test</p>
+    <input id="submit" type="button" value="버튼">
+    <table id="list">
+
+
+    </table>
+
+
+</body>
+
+</html>
