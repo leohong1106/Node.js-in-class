@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>welcome to car list page^_^</title>
+    <style>
+        #Benz,
+        #Volkswagen,
+        #Maseratti {
+            background-color: antiquewhite
+        }
+        #Audi,
+        #Porsche,
+        #Ferrari {
+            background-color: azure
+        }
+        #Bmw,
+        #Volvo,
+        #Lamborghini {
+            background-color: beige
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        alert('자동차 리스트 조회 페이지에 방문해주셔서 감사합니다.');
+    </script>
+    <div class="jumbotron text-center">
+        <h1>자동차 리스트 조회</h1>
+        <p>다양한 자동차들을 만나보세요!</p>
+        <P><%= test1.userid %> 님 환영합니다.</P>
+        <p><%= test2.userid %> 님도 환영합니다.</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div id="Benz" class="col-sm-4">
+                <h3>Mercedes-Benz</h3>
+                <p>벤츠 입니다.</p>
+                <p> 1883년 칼 벤츠가 설립한 벤츠 앤 시에와 1890년 고틀립 다임러가 설립한 DMG가 합병하면서 만들어진 독일의 자동차 브랜드로, 세단과 컨버터블, 스포츠카, 쿠페, SUV 등을
+                    제조 · 판매함</p>
+            </div>
+            <div id="Audi" class="col-sm-4">
+                <h3>Audi</h3>
+                <p>아우디 입니다.</p>
+                <p>아우구스트 호르히가 1909년에 설립한 독일의 자동차 브랜드로 세단을 포함해 SUV, 스포츠카 등을 제조 · 판매함</p>
+            </div>
+            <div id="Bmw" class="col-sm-4">
+                <h3>BMW</h3>
+                <p>BMW 입니다.</p>
+                <p>BMW는 프란츠 요세프 포프가 1916년에 설립한 독일의 자동차 브랜드로, 세단을 포함해 컨버터블, SUV, 스포츠카 및 모터사이클 등을 제조 · 판매함</p>
+            </div>
+            <!-- 첫번쨰줄 -->
+
+
+
+
+            <div id="Volvo" class="col-sm-4">
+                <h3>Volvo</h3>
+                <p>볼보 입니다.</p>
+                <p>볼보는 아서 가브리엘슨과 구스타프 라르손이 1927년에 설립한 스웨덴의 자동차 브랜드로 세단을 비롯하여 해치백, SUV, CUV 등을 제조 · 판매함</p>
+            </div>
+            <div id="Volkswagen" class="col-sm-4">
+                <h3>Volkswagen</h3>
+                <p>폭스바겐 입니다.</p>
+                <p>1937년 독일 나치노동조합 독일노동전선(German Labour Front)에 의해 설립되었다. 1930년대 자가용은 사치품이었고, 히틀러는 인민이 탈 수 있는 보급용 차량을
+                    선보이길 원했다. 그는 다임러벤츠사의 수석 엔지니어 출신의 페르디난트 포르쉐 박사에게 국민차(Volkswagen) 개발을 의뢰했다.</p>
+            </div>
+            <div id="Porsche" class="col-sm-4">
+                <h3>Porsche</h3>
+                <p>포르쉐 입니다.</p>
+                <p>포르쉐는 독일의 자동차 제조업체로 고성능 스포츠카, 슈퍼카, 세단, SUV 등을 제조한다. 아우디, 폭스바겐, 벤틀리, 부가티, 람보르기니 등의 자동차를 생산하는 폭스바겐그룹에 속해
+                    있다. 2013년 16만 2,145대의 차를 판매했다.</p>
+            </div>
+            <!-- 두번쨰줄 -->
+
+
+
+
+            <div id="Ferrari" class="col-sm-4">
+                <h3>Ferrari</h3>
+                <p>페라리 입니다.</p>
+                <p>1929년 엔초 페라리(Enzo Ferrari)가 만든 포뮬러원 경주팀 '스쿠데리아 페라리(Scuderia Ferrari)'에서 출발했다. 1947년 '페라리(Ferrari
+                    S.p.A)'라는 법인 이름으로 도로운행이 허가된 차량을 처음 생산했다.</p>
+            </div>
+            <div id="Lamborghini" class="col-sm-4">
+                <h3>Lamborghini</h3>
+                <p>람보르기니 입니다.</p>
+                <p>정식명칭은 Automobili Lamborghini S.p.A.이다. 1963년에 페루치오 람보르기니(Ferruccio Lamborghini)는 트랙터 제조 사업의 성공을 기반으로
+                    이탈리아에서 스포츠카를 제조하기 시작하였다.</p>
+            </div>
+            <div id="Maseratti" class="col-sm-4">
+                <h3>Maseratti</h3>
+                <p>마세라티 입니다.</p>
+                <p>1920년대 중엽에 마세라티가(家)의 3남 알피에리가 손으로 만든 경주용 모델을 제작하여 경주에 성공하였다. 1926년 알피에리 마세라티사(社)가 설립되었고 그 해
+                    타르가프로리오에서는 1.5 리터급(級)에서 우승하여 주목을 끌었다.</p>
+                <!-- 세번째줄 -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
