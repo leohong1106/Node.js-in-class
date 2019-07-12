@@ -11,13 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>welcome to car list page^_^</title>
     <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
-    <style>
-        body {
-            background-size: cover;
-            background-repeat: no-repeat;
-            /* opacity: 0.7 !important; */
-        }
-    </style>
+
     <script>
 
         function searchByCarNum() {
@@ -77,7 +71,7 @@
 
                         $target.append(`
                    <tr>
-                       <td>${i + 1}</td>
+                       <td>${i+1}</td>
                        <td>${item.carNumber}</td>
                        <td>${item.owner}</td>
                        <td>${item.model}</td>
@@ -95,23 +89,20 @@
     </script>
 </head>
 
-<body style="background-image:url('background_image1.jpg');">
+<body>
     <p>Car list2</p>
     <p><%= test2.userid %>님 안녕하세요</p>
     <hr>
     검색 기능을 구현합니다.
-    <div class="input-group mb-3">
-        <input type="text" id="searchtext1" class="form-control" placeholder="차량번호">
-        <div class="input-group-append">
-            <button class="btn btn-success" onclick="searchByCarNum();" type="submit">검색</button>
-        </div>
+    <div>
+        <input type="text" id="searchtext1" placeholder="차량번호" value="">
+        <button id="btn_search1" onclick="searchByCarNum();">검색</button>
     </div>
-    <div class="input-group mb-3">
-        <input type="text" id="searchtext2" class="form-control" placeholder="제조사">
-        <div class="input-group-append">
-            <button class="btn btn-success" onclick="searchByCompany();" type="submit">검색</button>
-        </div>
+    <div>
+        <input type="text" id="searchtext2" placeholder="제조사" value="">
+        <button id="btn_search2" onclick="searchByCompany()">검색</button>
     </div>
+
     <hr>
     <table id="list">
         <tr>
