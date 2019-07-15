@@ -17,6 +17,9 @@
             background-repeat: no-repeat;
             /* opacity: 0.7 !important; */
         }
+        #lo{
+            background-color: yellowgreen
+        }
     </style>
     <script>
 
@@ -96,8 +99,11 @@
 </head>
 
 <body style="background-image:url('background_image1.jpg');">
+    <% include ./inc/navbar.ejs %>
     <p>Car list2</p>
-    <p><%= test2.userid %>님 안녕하세요</p>
+    <p><%= user.userid %>님 안녕하세요 &nbsp&nbsp
+        <!-- <a id="lo" type="button" href="/logout">로그아웃</a> -->
+    </p>
     <hr>
     검색 기능을 구현합니다.
     <div class="input-group mb-3">

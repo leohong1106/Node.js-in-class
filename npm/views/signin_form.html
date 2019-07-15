@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Handlee|Nanum+Pen+Script&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
@@ -52,13 +56,14 @@
 </head>
 
 <body style="background-image:url('background1.jpg');">
+        <% include ./inc/navbar.ejs %>
     <div id="div">
-        <form action='/signin' method="POST">
+        <form action='/signup' method="POST">
             <br>
             <input type="text" placeholder="이름를 입력하세요" name="name" required autofocus><br>
-            <input type="text" placeholder="ID를 입력하세요" name="id" required><br>
+            <input type="text" placeholder="ID를 입력하세요" name="userid" required><br>
             <input type="password" placeholder="비밀번호를 입력하세요" name="password" required><br>
-            <input type="password" placeholder="한번 더 입력하세요" name="password" required><br>
+            <input type="password" placeholder="한번 더 입력하세요" name="password2" required><br>
             <input type="date" placeholder="생년월일을 입력하세요" name="birth"><br>
             <input type="text" placeholder="취미를 입력하세요" name="hobby"><br>
             <input type="email" placeholder="email을 입력하세요" name="email"><br>
