@@ -1,0 +1,34 @@
+<style>
+#lo{
+    background-color: slateblue;
+}
+</style>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="/">자정</a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/signin_form">회원가입</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/login_form">로그인</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/carlist_backup">자동차의 종류</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/carlist2">자동차검색</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/carhistory">사고이력조회</a>
+        </li>
+        <li class="nav-item" id="lo">
+            <a class="nav-link" href="/logout">로그아웃</a>
+        </li>
+    </ul>
+</nav>
+<% if (user) {%>
+<a class="btn btn-outline-warning" href="/logout">로그아웃</a>
+<% } else { %>
+<a class="btn btn-outline-primary" href="/login_form">로그인</a>
+<% } %>
